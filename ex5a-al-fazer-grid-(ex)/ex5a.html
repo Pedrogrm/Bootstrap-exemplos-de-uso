@@ -1,1 +1,95 @@
-<!-- 1ª Digitação (Resolver exercício aqui) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="radioactive.svg" type="image/x-icon">
+    <title>My Generation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Css customizado -->
+    <style>
+        body {
+            background: rgb(0,0,0);
+            background: radial-gradient(circle, rgba(0,0,0,1) 61%, rgba(41,41,41,1) 98%);
+        }
+
+        .green-text {
+            color: #39FF14; /* Verde neon */
+        }
+
+        .green-border {
+            border: 1px solid #39FF14; /* Borda verde neon */
+        }
+
+        .btn-outline-green {
+            border-color: #39FF14;
+            color: #39FF14;
+        }
+
+        .btn-outline-green:hover {
+            background-color: #39FF14;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar bg-black border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Generation</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-light">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- cards -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+           
+            <!-- Card 1 à esquerda -->
+            <div class="col-sm-4 mb-4">
+                <div class="card border-danger" style="width: 18rem;">
+                    <img src="img/vermelho.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-black border border-danger">
+                        <h5 class="card-title text-danger">Card Esquerda</h5>
+                        <p class="card-text text-danger">Texto descritivo, card à esquerda.</p>
+                        <a href="#" class="btn btn-outline-danger">Botão</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 centralizado -->
+            <div class="col-sm-4 mb-4 mx-auto"> <!-- mx-auto para centralizar -->
+                <div class="card" style="width: 18rem;">
+                    <img src="img/preto.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-black border border-light">
+                        <h5 class="card-title text-light">Card Central</h5>
+                        <p class="card-text text-light">Texto descritivo, card centralizado.</p>
+                        <a href="#" class="btn btn-outline-light">Botão</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 à direita -->
+            <div class="col-sm-4 mb-4">
+                <div class="card green-border" style="width: 18rem;">
+                    <img src="img/verde.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-black green-border">
+                        <h5 class="card-title green-text">Card Direita</h5> <!-- Usando a classe para o verde neon -->
+                        <p class="card-text green-text">Texto descritivo, card à direita.</p>
+                        <a href="#" class="btn btn-outline-green">Botão</a> <!-- Usando a classe personalizada para o botão -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
